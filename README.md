@@ -13,4 +13,6 @@ The third webpage displays the recommendations
 
 Note:
 
-THe pickle is not uploaded since the file size is 400 mb.
+The pickle is not uploaded since the file size is 400 mb.
+
+Run app.py and the webpage runs in localhost port:3300
