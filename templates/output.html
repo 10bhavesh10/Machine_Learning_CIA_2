@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://colorlib.com/etc/tb/Table_Responsive_v1/index.html -->
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Table V01</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='util3.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main3.css') }}">
+
+	<meta name="robots" content="noindex, follow">
+
+<body>
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+
+					<table>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Rating</th>
+								<th>URL</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for index, row in data.iterrows() %}
+							<tr>
+								<td>{{ row['title'] }}</td>
+								<td>{{ row['rating'] }}</td>
+								<td>{{ row['url'] }}</td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

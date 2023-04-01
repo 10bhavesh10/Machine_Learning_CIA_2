@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Input Page</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+    </head>
+    <body>
+        <div class="Input">
+            <h2>Enter data:</h2>
+            <form action="/recommend" method="POST">
+                <label for="flavour">Choose a flavour:</label>
+                    <select name="name" id="flavour">
+                      <option value="sweet">sweet</option>
+                      <option value="aromatic">aromatic</option>
+                      <option value="strong">strong</option>
+                      <option value="black">black</option>
+                      <option value="cocoa">cocoa</option>
+                      <option value="fruit-driven">fruit-driven</option>
+                    </select>
+                    <br><br>
+                <label for="number">Choose a number:</label>
+                    <select name="num" id="num">
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

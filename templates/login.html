@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LOGIN PAGE</title>
+        <!-- <style>
+            body{
+                margin:0;
+    padding: 0;
+    background: url("{{ url_for('static', filename='background.png') }}");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.loginbox
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:350px;
+    height:420px;
+    padding:80px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+}
+h2
+{
+    margin: 0;
+    padding: 0 0 20px;
+    color:#efed40;
+    text-align: center;
+}
+.loginbox p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #ffff;
+}
+.loginbox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"],
+.loginbox input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+::placeholder
+{
+    color: rgba(255,255,255,.5);
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #ffff;
+    font-size: 16px;
+    background: #ff267e;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover
+{
+    background: #efed40;
+    color: #262626;
+}
+.loginbox a
+{
+    color: #ffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+        </style> -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="Loginbox">
+            <h2>Log in here</h2>
+            <form action="/login" method="POST">
+                <p>Username</p>
+                <input type="text" name="user" placeholder="Enter username">
+                <p>Password</p>
+                <input type="password" name="pass" placeholder="Enter password">
+                <input type="submit" name="" value="Sign In">
+            </form>
+        </div>
+    </body>
+</html>

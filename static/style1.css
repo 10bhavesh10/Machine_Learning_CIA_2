@@ -1,0 +1,48 @@
+/* Style for the form container */
+.Input {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Style for the form heading */
+  .Input h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the select labels */
+  .Input label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Style for the select fields */
+  .Input select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the submit button */
+  .Input input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style for the submit button on hover */
+  .Input input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
